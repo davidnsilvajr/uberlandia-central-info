@@ -14,16 +14,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 153 100% 20%;  /* Uberlândia green */
+    --primary: 210 79% 51%;  /* Blue as primary color */
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 47 98% 54%;  /* Uberlândia yellow */
+    --secondary: 45 100% 51%;  /* Yellow */
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 153 100% 20%; /* Uberlândia green as accent */
+    --accent: 122 39% 49%; /* Green as accent */
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 84.2% 60.2%;
@@ -31,7 +31,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 153 100% 20%; /* Uberlândia green */
+    --ring: 210 79% 51%; /* Blue as ring */
 
     --radius: 0.5rem;
 
@@ -55,16 +55,16 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 153 100% 20%;  /* Uberlândia green */
+    --primary: 210 79% 51%;  /* Blue as primary color */
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 47 98% 54%;  /* Uberlândia yellow */
+    --secondary: 45 100% 51%;  /* Yellow */
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 153 100% 20%; /* Uberlândia green as accent */
+    --accent: 122 39% 49%; /* Green as accent */
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
@@ -72,7 +72,7 @@
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 153 100% 20%; /* Uberlândia green */
+    --ring: 210 79% 51%; /* Blue as ring */
     
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -101,10 +101,10 @@
   }
   
   .search-input {
-    @apply w-full px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-uberlandia-green;
+    @apply w-full px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-uberlandia-blue;
   }
   
   .section-title {
-    @apply text-2xl font-bold mb-4 text-uberlandia-green;
+    @apply text-2xl font-bold mb-4 text-uberlandia-blue;
   }
 }

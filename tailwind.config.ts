@@ -63,10 +63,11 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Uberlândia flag colors
+				// Updated Uberlândia colors with blue as primary
 				uberlandia: {
-					green: '#006934',
-					yellow: '#FDD116',
+					blue: '#1E88E5',   // Primary blue
+					green: '#4CAF50',  // Secondary green
+					yellow: '#FFC107', // Secondary yellow
 					white: '#FFFFFF',
 				},
 			},

@@ -12,7 +12,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
   };
 
   return (
-    <header className="bg-uberlandia-green text-white shadow-md">
+    <header className="bg-uberlandia-blue text-white shadow-md">
       <div className="container mx-auto py-4 px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center mb-4 md:mb-0">

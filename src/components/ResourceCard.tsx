@@ -21,13 +21,13 @@ const ResourceCard: React.FC<ResourceCardProps> = ({ resource }) => {
   const getIcon = () => {
     switch (resource.type) {
       case 'spreadsheet':
-        return <File className="h-8 w-8 text-uberlandia-green" />;
+        return <File className="h-8 w-8 text-uberlandia-blue" />;
       case 'folder':
         return <Folder className="h-8 w-8 text-uberlandia-yellow" />;
       case 'phone':
         return <Phone className="h-8 w-8 text-uberlandia-green" />;
       case 'system':
-        return <LinkIcon className="h-8 w-8 text-uberlandia-green" />;
+        return <LinkIcon className="h-8 w-8 text-uberlandia-blue" />;
       default:
         return <LinkIcon className="h-8 w-8 text-gray-500" />;
     }
@@ -41,7 +41,7 @@ const ResourceCard: React.FC<ResourceCardProps> = ({ resource }) => {
 
   return (
     <div 
-      className="card-link animate-fade-in border-t-4 border-uberlandia-green" 
+      className="card-link animate-fade-in border-t-4 border-uberlandia-blue" 
       onClick={handleClick}
     >
       <div className="mb-2">{getIcon()}</div>
