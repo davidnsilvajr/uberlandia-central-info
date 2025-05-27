@@ -12,21 +12,16 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
   };
 
   return (
-    <header className="bg-uberlandia-blue text-white shadow-md relative overflow-hidden">
-      <div className="absolute inset-0">
-        <img 
-          src="/lovable-uploads/7fa2a2c9-8774-47f8-ae93-cf0850606a92.png" 
-          alt="Prefeitura de Uberlândia" 
-          className="w-full h-full object-cover opacity-20"
-        />
-      </div>
-      <div className="container mx-auto py-6 px-4 sm:px-6 lg:px-8 relative z-10">
+    <header className="bg-uberlandia-blue text-white shadow-md">
+      <div className="container mx-auto py-6 px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center mb-4 md:mb-0">
-            <div className="flex items-center space-x-2">
-              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg">
-                <div className="w-10 h-10 bg-uberlandia-yellow rounded-full"></div>
-              </div>
+            <div className="flex items-center space-x-4">
+              <img 
+                src="/lovable-uploads/7fa2a2c9-8774-47f8-ae93-cf0850606a92.png" 
+                alt="Logo Prefeitura de Uberlândia" 
+                className="w-16 h-16 object-contain bg-white rounded-lg p-2 shadow-lg"
+              />
               <div>
                 <h1 className="text-3xl font-bold text-white drop-shadow-lg">Diretoria de Compras</h1>
                 <p className="text-sm text-gray-100 opacity-90">Prefeitura de Uberlândia</p>
