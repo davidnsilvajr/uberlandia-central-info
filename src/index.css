@@ -14,8 +14,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 210 79% 51%;  /* Blue as primary color */
-    --primary-foreground: 210 40% 98%;
+    --primary: 0 0% 53%;  /* #888 converted to HSL */
+    --primary-foreground: 0 0% 98%;
 
     --secondary: 45 100% 51%;  /* Yellow */
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -31,7 +31,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 210 79% 51%; /* Blue as ring */
+    --ring: 0 0% 53%; /* #888 as ring */
 
     --radius: 0.5rem;
 
@@ -55,7 +55,7 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 79% 51%;  /* Blue as primary color */
+    --primary: 0 0% 53%;  /* #888 as primary color */
     --primary-foreground: 0 0% 98%;
 
     --secondary: 45 100% 51%;  /* Yellow */
@@ -72,7 +72,7 @@
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 210 79% 51%; /* Blue as ring */
+    --ring: 0 0% 53%; /* #888 as ring */
     
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;

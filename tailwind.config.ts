@@ -63,9 +63,9 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Updated Uberlândia colors with blue as primary
+				// Updated Uberlândia colors with #888 as primary
 				uberlandia: {
-					blue: '#1E88E5',   // Primary blue
+					blue: '#888888',   // Primary gray color
 					green: '#4CAF50',  // Secondary green
 					yellow: '#FFC107', // Secondary yellow
 					white: '#FFFFFF',

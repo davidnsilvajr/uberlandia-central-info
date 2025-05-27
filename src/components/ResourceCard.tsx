@@ -41,16 +41,16 @@ const ResourceCard: React.FC<ResourceCardProps> = ({ resource }) => {
 
   return (
     <div 
-      className="card-link animate-fade-in border-t-4 border-uberlandia-blue" 
+      className="card-link animate-fade-in border-t-4 border-uberlandia-blue hover:border-uberlandia-yellow transition-colors" 
       onClick={handleClick}
     >
-      <div className="mb-2">{getIcon()}</div>
-      <h3 className="font-semibold text-gray-800 text-center">{resource.title}</h3>
+      <div className="mb-3">{getIcon()}</div>
+      <h3 className="font-semibold text-gray-800 text-center mb-2">{resource.title}</h3>
       {resource.description && (
-        <p className="text-sm text-gray-600 mt-1 text-center">{resource.description}</p>
+        <p className="text-sm text-gray-600 text-center">{resource.description}</p>
       )}
       {resource.phoneNumber && (
-        <p className="text-sm font-medium text-uberlandia-green mt-1">{resource.phoneNumber}</p>
+        <p className="text-sm font-medium text-uberlandia-green mt-2 text-center">{resource.phoneNumber}</p>
       )}
     </div>
   );
