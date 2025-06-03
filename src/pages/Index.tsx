@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Header from '../components/Header';
 import ResourceSection from '../components/ResourceSection';
@@ -15,7 +14,7 @@ const Index = () => {
         id: '1', 
         title: 'Atualização de Processo', 
         type: 'other', 
-        link: 'https://forms.google.com/seu-formulario-aqui', 
+        link: 'https://forms.google.com/seu-formulario-aqui',
         description: 'Google Forms para atualização do processo' 
       },
     ],
