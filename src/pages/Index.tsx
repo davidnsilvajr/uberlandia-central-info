@@ -8,43 +8,44 @@ import { ResourceItem } from '../components/ResourceCard';
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState('');
 
-  // Sample data - you can replace this with your actual resources
+  // Recursos organizados conforme a nova estrutura
   const allResources: Record<string, ResourceItem[]> = {
-    'Atualização de Processo': [
-      { id: '1', title: 'Portal SEI', type: 'system', link: 'https://sei.uberlandia.mg.gov.br', description: 'Sistema Eletrônico de Informações' },
-      { id: '2', title: 'Tramitação de Processos', type: 'folder', link: '#', description: 'Documentos para tramitação' },
-      { id: '3', title: 'Manual de Processos', type: 'spreadsheet', link: '#', description: 'Guia completo de procedimentos' },
-      { id: '4', title: 'Suporte Processos', type: 'phone', phoneNumber: '(34) 3239-5000', description: 'Atendimento especializado' },
+    'Atualização do Processo': [
+      { 
+        id: '1', 
+        title: 'Atualização de Processo', 
+        type: 'other', 
+        link: 'https://forms.google.com/seu-formulario-aqui', 
+        description: 'Google Forms para atualização do processo' 
+      },
     ],
-    'Planilhas': [
-      { id: '5', title: 'Orçamento 2025', type: 'spreadsheet', link: 'https://docs.google.com/spreadsheets/exemplo1', description: 'Planilha de orçamento anual' },
-      { id: '6', title: 'Relatório Mensal', type: 'spreadsheet', link: 'https://docs.google.com/spreadsheets/exemplo2', description: 'Relatório de atividades mensais' },
-      { id: '7', title: 'Controle de Projetos', type: 'spreadsheet', link: '#', description: 'Acompanhamento de projetos' },
-      { id: '8', title: 'Inventário', type: 'spreadsheet', link: '#', description: 'Lista de inventário atualizada' },
-    ],
-    'Pastas e Documentos': [
-      { id: '9', title: 'Documentos Importantes', type: 'folder', link: 'https://drive.google.com/drive/folders/exemplo1', description: 'Pasta com documentos essenciais' },
-      { id: '10', title: 'Manuais', type: 'folder', link: 'https://drive.google.com/drive/folders/exemplo2', description: 'Manuais e guias técnicos' },
-      { id: '11', title: 'Legislação', type: 'folder', link: '#', description: 'Leis e regulamentos' },
-      { id: '12', title: 'Arquivos de Projetos', type: 'folder', link: '#', description: 'Projetos em andamento e finalizados' },
-    ],
-    'Telefones Úteis': [
-      { id: '13', title: 'Suporte TI', type: 'phone', phoneNumber: '(34) 3239-1000', description: 'Suporte técnico' },
-      { id: '14', title: 'Recursos Humanos', type: 'phone', phoneNumber: '(34) 3239-2000', description: 'Departamento de RH' },
-      { id: '15', title: 'Manutenção', type: 'phone', phoneNumber: '(34) 3239-3000', description: 'Serviços de manutenção' },
-      { id: '16', title: 'Recepção', type: 'phone', phoneNumber: '(34) 3239-4000', description: 'Recepção principal' },
+    'Pastas Núcleos': [
+      { id: '2', title: 'Núcleo Geração de Atas', type: 'folder', link: 'https://drive.google.com/drive/folders/nucleo-atas', description: 'Pasta do Núcleo de Geração de Atas' },
+      { id: '3', title: 'Núcleo de Dispensa/Inex', type: 'folder', link: 'https://drive.google.com/drive/folders/nucleo-dispensa', description: 'Pasta do Núcleo de Dispensa/Inexigibilidade' },
+      { id: '4', title: 'Núcleo Jurídico', type: 'folder', link: 'https://drive.google.com/drive/folders/nucleo-juridico', description: 'Pasta do Núcleo Jurídico' },
+      { id: '5', title: 'Núcleo de Processos Licitatórios', type: 'folder', link: 'https://drive.google.com/drive/folders/nucleo-licitatorios', description: 'Pasta do Núcleo de Processos Licitatórios' },
+      { id: '6', title: 'Núcleo Técnico', type: 'folder', link: 'https://drive.google.com/drive/folders/nucleo-tecnico', description: 'Pasta do Núcleo Técnico' },
+      { id: '7', title: 'Núcleo de Contratos', type: 'folder', link: 'https://drive.google.com/drive/folders/nucleo-contratos', description: 'Pasta do Núcleo de Contratos' },
+      { id: '8', title: 'Núcleo de Formalização de Processos', type: 'folder', link: 'https://drive.google.com/drive/folders/nucleo-formalizacao', description: 'Pasta do Núcleo de Formalização de Processos' },
+      { id: '9', title: 'Núcleo de Planejamento de Compras', type: 'folder', link: 'https://drive.google.com/drive/folders/nucleo-planejamento', description: 'Pasta do Núcleo de Planejamento de Compras' },
+      { id: '10', title: 'Arquivo', type: 'folder', link: 'https://drive.google.com/drive/folders/arquivo', description: 'Pasta do Arquivo' },
+      { id: '11', title: 'Gabinete', type: 'folder', link: 'https://drive.google.com/drive/folders/gabinete', description: 'Pasta do Gabinete' },
+      { id: '12', title: 'Sicom', type: 'folder', link: 'https://drive.google.com/drive/folders/sicom', description: 'Pasta do Sicom' },
     ],
     'Sistemas': [
-      { id: '17', title: 'Sistema de RH', type: 'system', link: 'https://rh.uberlandia.mg.gov.br', description: 'Portal do funcionário' },
-      { id: '18', title: 'Intranet', type: 'system', link: 'https://intranet.uberlandia.mg.gov.br', description: 'Portal interno' },
-      { id: '19', title: 'Helpdesk', type: 'system', link: 'https://helpdesk.uberlandia.mg.gov.br', description: 'Sistema de chamados' },
-      { id: '20', title: 'SEI', type: 'system', link: 'https://sei.uberlandia.mg.gov.br', description: 'Sistema Eletrônico de Informações' },
+      { id: '13', title: 'WebCompras', type: 'system', link: 'https://webcompras.seu-link.com', description: 'Sistema WebCompras' },
+      { id: '14', title: 'Sistemas PMU', type: 'system', link: 'https://sistemas.uberlandia.mg.gov.br', description: 'Sistemas da PMU' },
+      { id: '15', title: 'E-licitações', type: 'system', link: 'https://elicitacoes.seu-link.com', description: 'Sistema E-licitações' },
+      { id: '16', title: 'WebContratos', type: 'system', link: 'https://webcontratos.seu-link.com', description: 'Sistema WebContratos' },
     ],
     'Links Úteis': [
-      { id: '21', title: 'Site Oficial', type: 'other', link: 'https://www.uberlandia.mg.gov.br', description: 'Site oficial da Prefeitura' },
-      { id: '22', title: 'Portal da Transparência', type: 'other', link: 'https://transparencia.uberlandia.mg.gov.br', description: 'Acesso à informação pública' },
-      { id: '23', title: 'Diário Oficial', type: 'other', link: 'https://diariooficial.uberlandia.mg.gov.br', description: 'Publicações oficiais' },
-      { id: '24', title: 'Capacitação Online', type: 'other', link: 'https://capacitacao.uberlandia.mg.gov.br', description: 'Plataforma de treinamentos' },
+      { id: '17', title: 'Protocolo', type: 'other', link: 'https://protocolo.uberlandia.mg.gov.br', description: 'Sistema de Protocolo' },
+      { id: '18', title: 'Transparência Licitações', type: 'other', link: 'https://transparencia.uberlandia.mg.gov.br/licitacoes', description: 'Portal de Transparência - Licitações' },
+      { id: '19', title: 'Portal Cidadão', type: 'other', link: 'https://cidadao.uberlandia.mg.gov.br', description: 'Portal do Cidadão' },
+    ],
+    'Arquivos Úteis': [
+      { id: '20', title: 'Telefones da DC', type: 'spreadsheet', link: 'https://drive.google.com/file/telefones-dc', description: 'Lista de telefones da Diretoria de Compras' },
+      { id: '21', title: 'Telefones PMU', type: 'spreadsheet', link: 'https://drive.google.com/file/telefones-pmu', description: 'Lista de telefones da PMU' },
     ],
   };
 
